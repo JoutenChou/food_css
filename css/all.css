@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+    font-size: 100%;
+} /* HTML5 display-role reset for older browsers */ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display: block;
+} body{
+    line-height: 1;
+} ol,ul{
+    list-style: none;
+} blockquote,q{
+    quotes: none;
+} blockquote:before,blockquote:after,q:before,q:after{
+    content: "";
+    content: none;
+} table{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+/*layout*/
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.wrap{
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+a{
+    text-decoration: none;
+}
+hr.sp-line{
+    margin: 30px;
+    height: 1.5px;
+    border: 0;
+    background-color: #cccccc;
+}
+/*header*/
+.header{
+    position: fixed;
+    top: 0;
+    display: inline-block;
+    width: 1200px;
+    height: 50px;
+    background-color: #ffff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+}
+.head-space{
+    height: 50px;
+}
+.header h1{
+    display: inline;
+}
+.header .mail{
+    float: right;
+}
+.header .mail::after{
+    clear: both;
+    content: "";
+}
+/*left-menu*/
+.left-menu{
+    position: fixed;
+    top: 0;
+}
+.menu-content{
+    float: left;
+    width: 300px;
+    height: 740px;
+    background-color: #ffff;
+    transform: scaleX(-101%);
+}
+span.menu-button{
+    font-size: 45px;
+}
+/*footer*/
+.footer{
+    display: inline-block;
+    overflow: hidden;
+    margin: 50px 0;
+}
+.footer h4{
+    font-size: 24px;
+}
+.footer-about{
+    float: left;
+    width: 30%;
+    line-height: 50px;
+}
+.footer-about::after{
+    clear: both;
+    content: "";
+}
+p.about-text{
+    line-height: 20px;
+}
+.blog-post{
+    float: left;
+    width: 30%;
+    line-height: 50px;
+}
+.blog-post ::after{
+    clear: both;
+    content: "";
+}
+.blog-post a{
+    display: block;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 95%;
+    line-height: 36px;
+}
+.blog-post a:nth-child(2){
+    border-bottom: 1px solid #cccccc;
+}
+.blog-post a:hover{
+    background-color: #cccccc;
+}
+.blog-post img{
+    float: left;
+    margin-left: 12px;
+    width: 20%;
+}
+.blog-post img::after{
+    clear: both;
+    content: "";
+}
+.blog-post .post-text{
+    float: left;
+    padding: 0 5%;
+    width: 50%;
+}
+.blog-post .post-text::after{
+    clear: both;
+    content: "";
+}
+.blog-post p{
+    color: #000000;
+}
+.post-title{
+    font-size: 20px;
+}
+.populer-tags{
+    float: left;
+    width: 40%;
+    line-height: 50px;
+}
+.populer-tags ::after{
+    clear: both;
+    content: "";
+}
+.populer-tags  a{
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #4d4d4d;
+    color: #ffffff;
+    font-size: 12px;
+}
+.populer-tags  a:hover{
+    background-color: #000000;
+    font-size: 16px;
+}
+/*section*/
+.food-introduce{
+    padding: 20px 0;
+    width: 100%;
+}
+.food-box{
+    overflow: hidden;
+}
+.food-card{
+    float: left;
+    padding: 0 0.5%;
+    width: 24%;
+    height: 600px;
+    text-align: center;
+}
+.food-card ::after{
+    clear: both;
+    content: "";
+}
+.food-card img{
+    width: 100%;
+    height: 400px;;
+}
+.food-card h3{
+    font-size: 20px;
+    line-height: 35px;
+}
+.food-card p{
+    line-height: 24px;
+}
+.food-introduce ul{
+    text-align: center;
+}
+.food-introduce ul li{
+    display: inline;
+}
+.food-introduce ul li a{
+    display: inline-block;
+    padding: 8px 16px;
+    color: #000000;
+}
+.food-introduce ul li a:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.food-introduce ul li a.active{
+    background-color: #000000;
+    color: #ffffff;
+}
+/*about*/
+.about{
+    text-align: center;
+    line-height: 50px;
+}
+.about h3{
+    margin: 20px 0;
+    font-size: 30px;
+}
+.about p{
+    line-height: 20px;
+}
+.about p.strong{
+    font-weight: bold;
+    font-size: 18px;
+}
+.about h5{
+    font-style: italic;
+}
